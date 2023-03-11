@@ -6,21 +6,218 @@
 
 body div.container {
   display: grid;
-  grid-template-columns: 12;
-  border: 5px solid aqua;
-  height: 500px;
+  grid-template-columns: 4;
+  height: 100vh;
 }
 body div.container #Navbar {
   grid-row-start: 1;
-  grid-row-end: 13;
-  border: 3px solid blue;
+  grid-row-end: 5;
+  display: flex;
+  padding-bottom: 47px;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid #171717;
+}
+body div.container #Navbar ul .Dashboard {
+  height: 146px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body div.container #Navbar ul .Dashboard img {
+  width: 40px;
+}
+body div.container #Navbar ul li {
+  padding: 11px 0px 11px 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #C9C8C8;
+}
+body div.container #Navbar .Upgrade {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body div.container #Navbar .Upgrade h2 {
+  width: 95px;
 }
 body div.container #DashOption {
-  background-color: black;
+  background-color: #171717;
   grid-column-start: 2;
-  grid-column-end: 13;
+  grid-column-end: 5;
   color: white;
+  padding: 47px 55px;
+  height: 300px;
 }
-body div.container .TeamMember {
+body div.container #DashOption .DashHeader {
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+body div.container #DashOption .DashHeader div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+body div.container #DashOption .DashHeader div i {
+  display: flex;
+  align-items: center;
+}
+body div.container #DashOption .DashHeader div input {
+  color: #725D5D;
+  width: 400px;
+  border: none;
+  background-color: transparent;
+}
+body div.container #DashOption .DashHeader div input::-moz-placeholder {
+  color: #725D5D;
+}
+body div.container #DashOption .DashHeader div input::placeholder {
+  color: #725D5D;
+}
+body div.container #DashOption h1 {
+  font-size: 64px;
+}
+body div.container #DashOption .resume {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 30%;
+}
+body div.container #DashOption .resume .cardResume {
+  position: relative;
+}
+body div.container #DashOption .resume .cardResume p {
+  width: 248px;
+  height: 182px;
+  border: 2px solid #000000;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 28px 31px;
+  position: relative;
+  z-index: 5;
+}
+body div.container #DashOption .resume .cardResume .border1 {
+  background-color: red;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 248px;
+  height: 182px;
+  padding: 28px 31px;
+  z-index: 1;
+  border: 2px solid #000000;
+}
+body div.container #DashOption .resume .cardResume .border2 {
+  background-color: #C3E5AE;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 248px;
+  height: 182px;
+  padding: 28px 31px;
+  z-index: 1;
+  border: 2px solid #000000;
+}
+body div.container #DashOption .resume .cardResume .border3 {
+  background-color: #A38DF4;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 248px;
+  height: 182px;
+  padding: 28px 31px;
+  z-index: 1;
+  border: 2px solid #000000;
+}
+body div.container #Team {
+  height: 303px;
+  padding: 10% 58px 75px;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  border: 3px solid #171717;
+}
+body div.container #Team .TeamFilter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #000000;
+}
+body div.container #Team .TeamMember {
+  height: 61px;
+  display: flex;
+  align-items: center;
+}
+body div.container #Team .TeamMember .memberInfo {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  border-bottom: 2px solid #F0F0F0;
+  border-right: 2px solid #F0F0F0;
+}
+body div.container #Team .TeamMember .memberInfo i {
+  margin-right: 10px;
+}
+body div.container #Team .TeamMember .memberInfo img {
+  margin-right: 13px;
+}
+body div.container #Team .TeamMember .memberRequests {
+  width: 200px;
+  height: 100%;
+  border-bottom: 2px solid #F0F0F0;
+  border-right: 2px solid #F0F0F0;
+}
+body div.container #Team .TeamMember .memberRequests h2 {
+  font-size: 12px;
+  padding: 13px 29px;
+}
+body div.container #Team .TeamMember .memberTransations {
+  width: 300px;
+  height: 100%;
+  border-bottom: 2px solid #F0F0F0;
+  border-right: 2px solid #F0F0F0;
+}
+body div.container #Team .TeamMember .memberTransations h2 {
+  font-size: 13px;
+  padding: 13px 29px;
+}
+body div.container #Team .TeamMember .occupation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #F0F0F0;
+}
+body div.container #Team .TeamMember .occupation button {
+  padding: 4px 10px;
+}
+body div.container .primaryButton,
+body div.container .secondButton {
+  transition: 0.4s;
+  cursor: pointer;
+  border: none;
+  padding: 4px 9px;
+}
+body div.container .primaryButton {
+  background-color: #171717;
+  color: #FFFFFF;
+}
+body div.container .primaryButton:hover {
+  background-color: #A38DF4;
+}
+body div.container .secondButton {
+  background-color: #EBEBEB;
+  color: #171717;
+}
+body div.container .secondButton:hover {
+  background-color: #171717;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
